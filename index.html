@@ -6,16 +6,21 @@
     <title>Document</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
 
     
    <div class="container-fluid fixed-top ">
         <div class="row">
-            <div class="navbar navbar-light bg-light navbar-expand-lg " >
+            <div class="navbar navbar-light  navbar-expand-lg custom-navbar" id="logo">
                 
-                <div class=" col-5 col-md-5 text-center">
-                    <a href="" class="navbar-brand p-0 md-5"><span><img src="logo.png" style="height: 50px; width:150px;" alt=""  ></span></a> 
+                <div class=" col-5 col-md-5 ms-md-5 ">
+                    <a href="" class="navbar-brand p-0 md-5"><span><img id="image" src="logo.png"  alt=""  ></span></a> 
                 </div>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,11 +28,11 @@
                     </button>
                 
 
-                <div class=" col-5 col-md-7 text-center ">
-                    <div class="fw-bold  collapse navbar-collapse" id="navbarToggle">
-                            <ul class="navbar-nav ">
-                        <li class="nav-item ">
-                            <a class="nav-link text-success" href="">TOURISME </a>
+                <div class=" col-5 col-md-7" id="search" >
+                    <div class="  collapse navbar-collapse" id="navbarToggle">
+                            <ul class="navbar-nav" id="menu">
+                        <li class="nav-item">
+                            <a class="nav-link text-success"  href="">TOURISME </a>
                         </li>
 
                         <li class="nav-item">
@@ -35,16 +40,16 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-success" href="">PATRIMOINE CULTURELLE </a>
+                            <a class="nav-link text-success" href="">PATRIMOINE CULTUREL </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-success" href=""> NOS PARTENAIRES</a>
+                            <a class="nav-link text-success"  href=""> NOS PARTENAIRES</a>
                         </li>
 
                         
                         <li class="nav-item"></li>
-                        <a href="" class="nav-link text-success fa fa-search"></a> 
+                        <a href="" class="nav-link text-success"><i class="fa-solid fa-magnifying-glass fs-4" ></i></a> 
                         </li>
                         </ul>
                     </div>  
@@ -64,7 +69,7 @@
         
         <div class="row">
             
-             <div class="navbar navbar-light bg-success navbar-expand-lg">
+             <div class="navbar navbar-light  navbar-expand-lg" id="green_nav" >
 
                 
 
@@ -73,32 +78,32 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
-                    <div class="col-md-10 offset-md-2 ">
+                    <div class="col-md-12 ms-md-5" >
                         <div class=" collapse navbar-collapse " id="navbar">
-                            <ul class="navbar-nav ">
+                            <ul class="navbar-nav" id="green_link">
                     
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold  me-md-5" href=""> LE MINISTERE</a>
+                                    <a class="nav-link text-white   me-md-3"  href=""> LE MINISTERE</a>
                                 </li>
 
 
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold me-md-3  " href=""> PROJETS ET REFORMES</a>
+                                    <a class="nav-link text-white me-md-3" href=""> PROJETS ET REFORMES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold  me-md-3 " href="">REGLEMENTATIONS</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold  me-md-3 " href=""> ACTUALITES</a>
+                                    <a class="nav-link text-white   me-md-3" href="">REGLEMENTATIONS</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold me-md-3  " href=""> PUBLICATIONS ET ANNONCES</a>
+                                    <a class="nav-link text-white  me-md-3"  href=""> ACTUALITES</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold  " href=""> CONTACTS</a>
+                                    <a class="nav-link text-white  me-md-3"  href=""> PUBLICATIONS ET ANNONCES</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-white   href=""> CONTACTS</a>
                                 </li>
                             </ul>
                 
@@ -113,31 +118,49 @@
     </div>
 
      <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators" >
-    <button type="button" style="border-radius: 50%; width: 12px; height:12px; padding: 10px; background-color: goldenrod; border: 1px solid transparent;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" style="border-radius: 50%; width: 12px; height:12px; padding: 10px; background-color: transparent; border: 1px solid white;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" style="border-radius: 50%; width: 12px; height:12px; padding: 10px; background-color: transparent; border: 1px solid white;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" style="border-radius: 50%; width: 12px; height:12px; padding: 10px; background-color: transparent; border: 1px solid white;" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  <div class="carousel-indicators " >
+    <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
   
 </div>
-  <div class="carousel-inner">
+  <div class="carousel-inner position-relative" >
     <div class="carousel-item active position-relative ">
-      <img src="carousel1.jpg" class="d-block w-100 " alt="..." >
-      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
-    </div>
-    <div class="carousel-caption">
-        <h1 style=" margin-bottom: 10%; text-align: justify;">Ville durable/Benin: <br>
+      <img  src="carousel11.png" class="d-block w-100 " alt="..." >
+      
+        <!--   <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>-->
+        <div class="carousel-caption">
+        <h1 id="title" >Ville durable/Benin: <br>
        L'ecomusée Tata Somba, <br>
         fer de lance de l'écotourisme</h1>
       </div>
+    </div>
+    
+    
     <div class="carousel-item">
-      <img src="carousel2.jpg" class="d-block w-100" alt="..."  >
+      <img src="carousel12.jpg" class="d-block w-100" alt="..."  >
+      <div class="carousel-caption">
+        <h1 id="title" >Ville durable/Benin: <br>
+       L'ecomusée Tata Somba, <br>
+        fer de lance de l'écotourisme</h1>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="carousel3.jpg" class="d-block w-100 " alt="..."   >
+      <img src="carousel13.jpg" class="d-block w-100 " alt="..."   >
+      <div class="carousel-caption">
+        <h1 id="title" >Ville durable/Benin: <br>
+       L'ecomusée Tata Somba, <br>
+        fer de lance de l'écotourisme</h1>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="carousel4.jpg" class="d-block w-100" alt="..." >
+      <img src="carousel14.jpg" class="d-block w-100" alt="..." >
+      <div class="carousel-caption">
+        <h1 id="title" >Ville durable/Benin: <br>
+       L'ecomusée Tata Somba, <br>
+        fer de lance de l'écotourisme</h1>
+      </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -154,117 +177,118 @@
 <section class="px-4 mt-3">
     <div class="container">
         <div class="row">
-            <div class=" col-12  col-md-5 col-lg-5">
-                <div class="card">
+            <div class=" col-12  col-md-5 col-lg-6">
+                <div class="card" id="card1">
   <div class="card-body">
-    <h5 class="card-title fw-bold">Ville durable/Benin: 
-       L'ecomusée Tata Somba, <br>
+    <h5 class="card-title fw-bold mt-2 fs-22-73" >Ville durable/Benin: 
+       L'ecomusée Tata Somba, 
         fer de lance de l'écotourisme</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
-    <div class="row">
+    <p class="card-text mt-3 fs-14-32">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum laudantium facilis explicabo assumenda, possimus odit, impedit sed cupiditate rerum consectetur repellat! .
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.   </p>
+    <div class="row" >
         <div class=" col-6 col-md-6 " >
-            <button class="card-text bg-white" style="width: 8rem;">
-                Lire l'article
+            <button class="card-text bg-white w-143-43" >
+               <p class="mt-2 fs-16-85" > Lire l'article</p>
             </button>
         </div>
 
-        <div class=" col-6 col-md-6 text-end">
-            <h6> <span class="fa fa-calendar me-md-2  fs-3 text-secondary"></span>20 juin 2020</h6>
+        <div class=" col-6 col-md-6 text-end mt-1">
+            <h6 class="fs-18-48" > <span <i class="fa-solid fa-calendar-days text-dark-me"></i></span>20 juin 2020</h6>
         </div>
     </div>
     
   </div>
-  <img src="case.jpg" class="card-img-top" alt="..." style="height: 32.5rem;">
+  <img src="red-case.jpg" class="card-img-top " alt="..." >
 </div>
             </div>
-            <div class=" col-12 col-md-7 col-lg-7">
+            <div class=" col-12 col-md-7 col-lg-6"  >
                 <div class="row ">
   <div class="col-12 col-md-6 ">
-    <div class="card">
+    <div class="card" id="card2" >
 
       <div class="card-body">
-        <h5 class="card-title fw-bold">Ganvié, Cité <br> lacustre du Benin</h5>
-        <p class="card-text">This is a longer card with supporting text below . </p>
-            <div class="row">
+        <h5 class="card-title fw-bold" style="font-size: 17.8px;">Ganvié, Cité <br> lacustre du Benin</h5>
+        <p class="card-text" style="font-size: 12.75px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+            <div class="row" id="btn">
         <div class=" col-6 col-md-6">
-            <button class="card-text bg-white" style="width:8rem;">
-                Lire l'article
+            <button class="card-text bg-white">
+              <p class="mt-1">Lire l'article</p>  
             </button>
         </div>
 
         <div class=" col-6 col-md-6 text-end">
-            <h6><span class="fa fa-calendar me-md-2  fs-4 text-secondary"></span>20 juin 2020</h6>
+            <h6><span <i class="fa-solid fa-calendar-days fs-bg-me"  ></i></span>20 juin 2020</h6>
         </div>
     </div>
       </div>
-            <img src="images.jpg" class="card-img-top " alt="..." style="height: 10rem;">
+            <img src="child.jpg" class="card-img-top " alt="..." >
     </div>
   </div>
   <div class="col-12 col-md-6 mb-3">
-    <div class="card">
+    <div class="card" id="card3">
      
       <div class="card-body">
-        <h5 class="card-title fw-bold">APN Rehabilitera le Parc national de  Penjari situé au Nord-Ouest du pays</h5>
-        <p class="card-text">This is a longer card with supporting text below .</p>
+        <h5 class="card-title fw-bold fs-13" >APN Rehabilitera le Parc national de  Penjari situé au Nord-Ouest du pays</h5>
+        <p class="card-text" style="font-size: 10.38px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
             <div class="row">
         <div class=" col-6 col-md-6">
-            <button class="card-text bg-white" style="width: 8rem;">
-                Lire l'article
+            <button class="card-text bg-white">
+              <p class="mt-1">Lire l'article</p>  
             </button>
         </div>
 
         <div class=" col-6 col-md-6 text-end">
-            <h6><span class="fa fa-calendar me-md-2  fs-4 text-secondary"></span>20 juin 2020</h6>
+            <h6><span <i class="fa-solid fa-calendar-days fs-bg-me"></i></span>20 juin 2020</h6>
         </div>
     </div>
       </div>
-       <img src="eleph.jpg" class="card-img-top " alt="..." style="height: 8.5rem;">
+       <img src="elephant.png" class="card-img-top " alt="..." >
     </div>
   </div>
    </div>
    <div class="row">
   <div class="col-12 col-md-6">
-    <div class="card">
+    <div class="card" id="card4">
       
       <div class="card-body">
-        <h5 class="card-title">APN Rehabilitera le Parc national de  Penjari situé au Nord-Ouest du pays</h5>
-        <p class="card-text">This is a longer card with supporting text below .</p>
+        <h5 class="card-title fw-bold" style="font-size: 13.19px;">APN Rehabilitera le Parc national de  Penjari situé au Nord-Ouest du pays</h5>
+        <p class="card-text" style="font-size:10.26px ;">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         <div class="row">
         <div class="col-6 col-md-6">
-            <button class="card-text bg-white" style="width: 8rem;">
-                Lire l'article
+            <button class="card-text bg-white" >
+               <p class="mt-1">Lire l'article</p> 
             </button>
         </div>
 
         <div class="col-6 col-md-6 text-end">
-            <h6><span class="fa fa-calendar me-md-2  fs-4 text-secondary"></span>20 juin 2020</h6>
+            <h6><span <i class="fa-solid fa-calendar-days fs-bg-me" ></i></span>20 juin 2020</h6>
         </div>
     </div>
       </div>
-      <img src="card.jpg" class="card-img-top" alt="..." style="height: 8.5rem;">
+      <img src="perche.jpg" class="card-img-top" alt="..." >
     </div>
   </div>
-  <div class="col-12 col-md-6 " style="">
-    <div class="card">
+  <div class="col-12 col-md-6" >
+    <div class="card" id="card5">
      
       <div class="card-body">
-        <h5 class="card-title">APN Rehabilitera le Parc national de  Penjari situé au Nord-Ouest du pays</h5>
-        <p class="card-text">This is a longer card with supporting text below . </p>
+        <h5 class="card-title fw-bold fs-13" style="font-size: 13.35px;">APN Rehabilitera le Parc national de  Penjari situé au Nord-Ouest du pays</h5>
+        <p class="card-text" style="font-size: 10.38px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
         <div class="row">
         <div class=" col-6 col-md-6">
-            <button class="card-text bg-white" style="width: 8rem;">
-                Lire l'article
+            <button class="card-text bg-white" >
+               <p class="mt-1">Lire l'article</p> 
             </button>
         </div>
 
         <div class=" col-6 col-md-6 text-end">
-            <h6><span class="fa fa-calendar me-md-2  fs-4 text-secondary"></span>20 juin 2020</h6>
+            <h6><span <i class="fa-solid fa-calendar-days fs-bg-me" ></i></span>20 juin 2020</h6>
         </div>
     </div>
       </div>
-       <img src="eleph.jpg" class="card-img-top " alt="..." style="height: 8.5rem;">
+       <img src="elephant.png" class="card-img-top " alt="..." >
     </div>
   </div>
 </div>
@@ -275,72 +299,72 @@
 </section>
 
 
-<section class="px-4 mt-3">
-    <div class="container">
-        <div class="row">
+<section class="px-4 mt-5">
+    <div class="container ">
+        <div class="row ">
             
                 
-  <div class="col-12 col-md-4">
+  <div class="card col-md-4 w-h-bg" >
 
-          <div class="card-body">
-        <h5 class="card-title">APN Rehabilitera le Parc national de <br> Penjari situé au Nord-Ouest du pays</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+          <div class="card-body" >
+        <h5 class="card-title fs-6 fw-bold" >APN Rehabilitera le Parc national de <br> Penjari situé au Nord-Ouest du pays</h5>
+        <p class="card-text fs-12-6">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
         <div class="row">
-        <div class=" col-6 col-md-6">
-            <button class="card-text mb-3 bg-white" style="width: 8rem;">
-                Lire l'article
+        <div class=" col-6 col-md-6 read">
+            <button class="card-text mb-3 bg-white" >
+               <p class="mt-1">Lire l'article</p> 
             </button>
         </div>
 
         <div class="col-6 col-md-6 text-end">
-            <h6><span class="fa fa-calendar me-md-2  fs-4 text-secondary"></span>20 juin 2020</h6>
+            <h6><span <i class="fa-solid fa-calendar-days fs-bg-me" ></i></span>20 juin 2020</h6>
         </div>
     </div>
       </div>
-       <img src="card.jpg" class="card-img-top" alt="..." style="height: 17rem;">
+       <img src="perche.jpg" class="card-img-top card-img-1" alt="..." >
          </div>
          
 
-          <div class="col-12 col-md-4">
+          <div class="card col-12 col-md-4 f-card" >
 
        <div class="card-body">
-        <h5 class="card-title">APN Rehabilitera le Parc national de <br> Penjari situé au Nord-Ouest du pays</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+        <h5 class="card-title fs-6 fw-bold" >APN Rehabilitera le Parc national de <br> Penjari situé au Nord-Ouest du pays</h5>
+        <p class="card-text fs-12-6">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
         <div class="row">
-        <div class="col-6 col-md-6">
-            <button class="card-text mb-3 bg-white"style="width: 8rem;">
-                Lire l'article
+        <div class="col-6 col-md-6 read ">
+            <button class=" card-text mb-3 bg-white">
+               <p class="mt-1">Lire l'article</p> 
             </button>
         </div>
 
         <div class="col-6 col-md-6 text-end" >
-            <h6><span class="fa fa-calendar me-md-2  fs-4 text-secondary"></span>20 juin 2020</h6>
+            <h6><span <i class="fa-solid fa-calendar-days fs-bg-me" ></i></span>20 juin 2020</h6>
         </div>
     </div>
       </div>
-       <img src="card.jpg" class="card-img-top" alt="..." style="height: 17rem;">
+       <img src="perche.jpg" class="card-img-top card-img-2" alt="..." >
         </div>
         
-         <div class="col-12 col-md-4">
+         <div class="card col-12 col-md-4 f-card-w" >
 
        <div class="card-body">
-        <h5 class="card-title">APN Rehabilitera le Parc national de <br> Penjari situé au Nord-Ouest du pays</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+        <h5 class="card-title fw-bold fs-6" >APN Rehabilitera le Parc national de <br> Penjari situé au Nord-Ouest du pays</h5>
+        <p class="card-text fs-12-6" >This is a longer card with supporting text below as a natural lead-in to additional content. </p>
         <div class="row">
-        <div class="col-6  col-md-6">
-            <button class="card-text mb-3 bg-white"style="width: 8rem;">
-                Lire l'article
+        <div class="col-6  col-md-6 read ">
+            <button class="card-text mb-4 bg-white ">
+              <p class="mt-1 ">Lire l'article</p>  
             </button>
         </div>
 
         <div class="col-6 col-md-6 text-end" >
-            <h6><span class="fa fa-calendar me-md-2 fs-4 text-secondary"></span>20 juin 2020</h6>
+            <h6><span <i class="fa-solid fa-calendar-days fs-bg-me" ></i></span>20 juin 2020</h6>
         </div>
     </div>
       </div>
-       <img src="card.jpg" class="card-img-top" alt="..." style="height: 13.5rem;">
-       <button class="btn btn-success card-text mt-3 text-center offset-md-3">
-        Lire toute l'actualité
+       <img src="perche.jpg" class="card-img-top card-img" alt="..." >
+       <button class=" btn  card-text mb-4 mt-2 me-5 ms-5 text-center offset-md-3 btn-text"  >
+               Lire toute l'actualité
        </button>
         </div>
         
@@ -349,38 +373,38 @@
     </div>
 </section>
 
-<section class=" mt-5 ">
-    <div class="container bg-light p-5">
-        <h1 class="text-center">Services</h1>
-        <div class="row">
+<section class=" mt-5  ">
+    <div class="container bg-light p-h-w ">
+        <h1 class="text-center  fw-bold fs-44-f ">Services</h1>
+        <div class="row font-f" >
             <div class="col-md-12 ">
-            <div class="row">
-                <div class="col-12 offset-md-1 col-md-5 bg-white p-3  me-md-4 text-center mt-3">
-                <h5>Délivrance de crate <br> d'artiste</h5>
+            <div class="row ">
+                <div class="col-12 offset-md-1 col-md-5 bg-white p-3  me-md-4 text-center mt-3 w-503-h-130 rounder-lg ">
+               <a href="" class="text-dark text-decoration-none "> <h5 class="fs-3 fw-semibold">Délivrance de crate <br> d'artiste</h5></a>
                 </div>
 
-                <div class="col-12  col-md-5 bg-white p-3 text-center  mt-3 ">
-                   <h5>Agrement et Licence <br> d'exploitation de d'hotels</h5>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 offset-md-1 col-md-5   bg-white p-3 text-center  me-md-4 mt-3">
-                     <h5>Agrement et Licence <br> d'exploitation de d'hotels</h5>
-                </div>
-
-                <div class="col-12  bg-white p-3  text-center  mt-3">
-                    <h5>Délivrance de crate <br> d'artiste</h5>
+                <div class="col-12  col-md-5 bg-white p-3 text-center  mt-3 me-md-4 mt-3 w-503-h-130 rounder-lg ">
+                  <a href="" class="text-dark text-decoration-none "> <h5  class="fs-3 fw-semibold" >Agrement et Licence <br> d'exploitation de d'hotels</h5></a>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12  offset-md-1 col-md-5   bg-white p-3 fs-5 text-center me-md-4 mt-3">
-                    <h5>Agrement et Licence <br> d'exploitation de d'hotels</h5>
+            <div class="row rounder-lg">
+                <div class="col-12 offset-md-1 col-md-5   bg-white p-3 text-center  me-md-4 mt-3 w-503-h-130 rounder-lg">
+                    <a href="" class="text-dark text-decoration-none "> <h5  class="fs-3 fw-semibold" >Agrement et Licence <br> d'exploitation de d'hotels</h5></a>
                 </div>
 
-                <div class="col-12 col-md-5 bg-white p-3 fs-5 text-center  mt-3">
-                     <h5>Délivrance de crate <br> d'artiste</h5>
+                <div class="col-12  bg-white p-3 col-md-5 text-center  mt-3 me-md-4 mt-3 w-503-h-130 rounder-lg ">
+                   <a href="" class="text-dark text-decoration-none "> <h5  class="fs-3 fw-semibold" >Délivrance de crate <br> d'artiste</h5></a>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-12  offset-md-1 col-md-5   bg-white p-3 fs-5 text-center me-md-4 mt-3 w-503-h-130 rounder-lg">
+                    <a href="" class="text-dark text-decoration-none "><h5  class="fs-3 fw-semibold" >Agrement et Licence <br> d'exploitation de d'hotels</h5></a>
+                </div>
+
+                <div class="col-12 col-md-5 bg-white p-3 fs-5 text-center mt-3 me-md-4 mt-3 w-503-h-130 rounder-lg">
+                     <a href="" class="text-dark text-decoration-none "><h5  class="fs-3 fw-semibold" >Délivrance de crate <br> d'artiste</h5></a>
                 </div>
             </div>
             </div>
@@ -389,31 +413,31 @@
 </section>
 
 <section class="mt-4">
-    <div class="container">
-        <h1 class="text-center">Liens utiles</h1>
-        <div class="row">
-            <div class=" col-12 col-md-6 mt-3  col-lg-3 ">
-                <button class="btn btn-secondary p-3 w-100">
-                    <h2>Gouv.bj</h2>
-                    <p >Actualités <br> gouvernementale</p>
+    <div class="container p-5">
+        <h1 class="text-center fw-bold fs-44">Liens utiles</h1>
+        <div class="row font-f">
+            <div class=" col-12 col-md-12 mt-3  col-lg-3 ">
+                <button class="btn w-268-h134 bg-second " >
+                    <h2 class="fs-24 text-white fw-bold">Gouv.bj</h2>
+                    <p class="fs-18 text-white ">Actualités <br> gouvernementale</p>
                 </button>
                 </div>
-                 <div class=" col-12 mt-3 col-md-6 col-lg-3">
-                <button class="btn btn-warning p-4 w-100 py-3">
-                    <h2>sgg.gouv.bj</h2> <br>
-                    <p >Lois-decrets</p>
+                 <div class=" col-12 mt-3 col-md-12 col-lg-3">
+                <button class="btn w-268-h134 bg-warn" >
+                    <h2 class="fs-24 fw-bold">sgg.gouv.bj</h2> 
+                    <p class="fs-18 ">Lois-decrets</p>
                 </button>
                 </div>
-                 <div class=" col-12 mt-3   col-md-6   col-lg-3">
-                <button class="btn btn-info p-3 w-100 ">
-                    <h2>eVisa.bj</h2>
-                    <p >Obtenir un visa  <br> en ligne</p>
+                 <div class=" col-12 mt-3   col-md-12  col-lg-3">
+                <button class="btn w-268-h134 bg-info">
+                    <h2 class="fs-24 text-white fw-bold">eVisa.bj</h2>
+                    <p class="fs-18 text-white ">Obtenir un visa  <br> en ligne</p>
                 </button>
                 </div>
-                <div class=" col-12 mt-3 col-md-6 col-lg-3">
-                <button class="btn btn-danger w-100 py-3">
-                    <h2>Service-public.bj</h2>
-                    <p>Actualités <br> gouvernementale</p>
+                <div class=" col-12 mt-3 col-md-12 col-lg-3">
+                <button class="btn w-268-h134 bg-dang">
+                    <h2 class="fs-24 text-white fw-bold">Service-public.bj</h2>
+                    <p  class="fs-18 text-white ">Actualités <br> gouvernementale</p>
                 </button>
             </div>
         </div>
@@ -421,57 +445,57 @@
 </section>
 
 
-<section class="bg- bg-secondary mt-4 p-4">
-    <div class="container ">
-        <div class="row text-white ">
-            <div class=" col-12 col-md-12 col-lg-3 ">
-                <p class="fw-bold " >LE MINISTÈRE</p>
-                <p>LE MINISTRE <br> <br>  SERVICES ET PERSONNES <br> DIRECTEMENT RATTACHES <br> AU MINISTRE
+<section class=" bg-second mt-1 p-5">
+    <div class="container contenu">
+        <div class="row text-white font-f" >
+            <div class=" col-12 col-md-12 col-lg-3 ms-23">
+                <p class="fw-bold fs-18" >LE MINISTÈRE</p>
+                <p  class="fs-12" >LE MINISTRE <br> <br>  SERVICES ET PERSONNES <br> DIRECTEMENT RATTACHES <br> AU MINISTRE
                 <br> <br> LE CABINET DU MINISTRE <br> <br> LE SECRETARIAT GENERAL <br> DU MINISTRE <br> <br> LES DIRECTIONS CENTRALES <br> <br> LES DIRECTIONS TECHNIQUES
             <br> <br> LES STRUCTURES SOUS <br> TUTELLES  </p>
             </div>
 
-             <div class=" col-12 col-md-12 col-lg-3  ">
-                <p class="fw-bold " >LES PROJETS DE REFORMES</p>
-                <P>FOCUS SUR LES 7 PROJETS <br> PHARES DU PAG 2016-2021 <br> <br> AUTRES PROJETS <br> <br> REFORMES</P>
+             <div class=" col-12 col-md-12 col-lg-3 me-n80" >
+                <p class="fw-bold fs-18"  >LES PROJETS DE REFORMES</p>
+                <P  class="fs-12" >FOCUS SUR LES 7 PROJETS <br> PHARES DU PAG 2016-2021 <br> <br> AUTRES PROJETS <br> <br> REFORMES</P>
             </div>
 
-             <div class=" col-12 col-md-12  col-lg-3 px-5">
-                <p class="fw-bold " >PUBLICATIONS</p>
-                <P>POLITIQUES SECTORIELLES <br> ET DOCUMENTS DE STRATEGIE <br> <br> ANNUAIRES STATISTIQUES <br> <br> DISCOURS <br> <br> COMMUNIQUES ET AVIS 
+             <div class=" col-12 col-md-12  col-lg-3 px-5 me-80">
+                <p class="fw-bold fs-18"  >PUBLICATIONS</p>
+                <P  class="fs-12" >POLITIQUES SECTORIELLES <br> ET DOCUMENTS DE STRATEGIE <br> <br> ANNUAIRES STATISTIQUES <br> <br> DISCOURS <br> <br> COMMUNIQUES ET AVIS 
                 <br> <br> MARCHES PUBLICS <br> <br> GALERIE (PHOTOS/VIDEOS/AUDIOS) <br> <br> ESPACES PRESSE</P>
             </div>
 
              <div class=" col-12 col-md-12  col-lg-3">
-                <p class="fw-bold " >EVENEMENTS</p>
-                <p>EVENEMENTS PASSES <br> <br> EVENEMENT A VENIR</p>
+                <p class="fw-bold fs-18" >EVENEMENTS</p>
+                <p class="fs-12">EVENEMENTS PASSES <br> <br> EVENEMENT A VENIR</p>
             </div>
 
         </div>
 
         <div class="row">
             <div class=" col-12 col-md-12 text-center">
-                 <a href="" class="navbar-brand ms-md-5 "><span><img  src="logo.png" style="height: 50px; width: 150px; " alt=""  ></span></a> 
+                 <a href="" class="navbar-brand "><span><img  src="ministre.png" class="h-129-w-309"  alt=""  ></span></a> 
                 
             </div>
         </div>
 
         <div class="row">
-            <div class=" col-9 col-md-7 offset-3 offset-md-5 mt-1 ">
+            <div class=" col-9 col-md-7 offset-3 offset-md-5  ">
                
-                <p class="fw-bold" >© Tous droits réservés @ 2020</p>
+                <p class="text fw-bold fs-14-mt text-white" >© Tous droits réservés @ 2020</p>
             </div>
         </div>
     </div>
 
 </section>
 
-<section>
+<section>  
 <div class="container-fluid">
    
-        <div class="row">
+        <div class="row ">
 
-            <div class="d-flex p-0" style="height:15px;">
+            <div class="d-flex p-0 h-15" >
                 <div class=" col-4 col-md-4 bg-success"></div>
                 <div class=" col-4 col-md-4 bg-warning"></div>
                 <div class=" col-4 col-md-4 bg-danger"></div>
@@ -499,6 +523,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
+<script>
+  
+</script>
 </body>
 </html>
